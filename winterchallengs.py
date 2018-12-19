@@ -1,16 +1,13 @@
 def john():
-    total = 2
-    a = 1
-    b = 2
+    num = 2520
     while True:
-        c = a + b
-        if c > 4000000:
-            break
-        if c %2 == 0:
-            total += c
-        a=b
-        b=c
-    print(total)
+        num += 20
+        for i in range(11,21):
+            if num % i == 0:
+                print(num)
+        break
+    
+    
         
         
     
