@@ -1,11 +1,20 @@
 def john():
-    total = 0
-    for i in range(1,1000):
-        if i % 5 == 0 or i % 3 == 0:
-            total += i 
+    total = 2
+    a = 1
+    b = 2
+    while True:
+        c = a + b
+        if c > 4000000:
+            break
+        if c %2 == 0:
+            total += c
+        a=b
+        b=c
     print(total)
         
-def main():
-    john()
+        
+    
+
+
 if __name__ == '__main__':
-    main()
+    john()
