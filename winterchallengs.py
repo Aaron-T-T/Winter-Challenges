@@ -1,15 +1,9 @@
 def john():
-    a = 0
-    for i in range(0,1000):
-        c= 5
-        d =3
-        b = c*i
-        e= d*i
-        if b <1000:
-            a += b
-        if e <1000:
-            a+=e
-    print(a)
+    total = 0
+    for i in range(1,1000):
+        if i % 5 == 0 or i % 3 == 0:
+            total += i 
+    print(total)
         
 def main():
     john()
